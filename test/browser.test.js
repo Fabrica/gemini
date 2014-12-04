@@ -37,7 +37,8 @@ describe('browser', function() {
         beforeEach(function() {
             this.wd = {
                 configureHttp: sinon.stub().returns(q()),
-                init: sinon.stub().returns(q({}))
+                init: sinon.stub().returns(q({})),
+                eval: sinon.stub().returns(q(''))
             };
 
             this.config = {
